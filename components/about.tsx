@@ -10,7 +10,8 @@ export default function About() {
                 I am a University of Connecticut Graduate <br></br> with a bachelors degree in 
                 Computer Science, <br></br>concentrated on Data Analytics.
             </p>
-            <div>
+            
+            <div className="flex justify-center gap-4">
                 <a className="group inline-flex gap-1.5 items-center text-xl rounded-xl px-4 py-3 bg-opacity-20 hover:bg-opacity-30 mr-4 bg-white text-black transition-transform hover:scale-105"
                 href ="https://www.linkedin.com/in/akhil-saini-cs" target="_blank"
                 >
