@@ -1,4 +1,5 @@
 import { HiDownload } from "react-icons/hi";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function About() {
     return (
@@ -10,7 +11,21 @@ export default function About() {
                 Computer Science, <br></br>concentrated on Data Analytics.
             </p>
             <div>
-                <a className="group flex gap-1.5 items-center rounded-xl px-4 py-3 bg-opacity-20 hover:bg-opacity-30 mr-4 bg-white text-black transition-transform hover:scale-105"
+                <a className="group inline-flex gap-1.5 items-center text-xl rounded-xl px-4 py-3 bg-opacity-20 hover:bg-opacity-30 mr-4 bg-white text-black transition-transform hover:scale-105"
+                href ="https://www.linkedin.com/in/akhil-saini-cs" target="_blank"
+                >
+                    <FaLinkedin />
+                    Linkedin
+                </a>
+
+                <a className="group inline-flex gap-1.5 items-center text-xl rounded-xl px-4 py-3 bg-opacity-20 hover:bg-opacity-30 mr-4 bg-white text-black transition-transform hover:scale-105"
+                href ="https://github.com/akhilsaini16" target="_blank"
+                >
+                    <FaGithub />
+                    Github
+                </a>
+
+                <a className="group inline-flex gap-1.5 items-center text-xl rounded-xl px-4 py-3 bg-opacity-20 hover:bg-opacity-30 mr-4 bg-white text-black transition-transform hover:scale-105"
                 href ="https://www.linkedin.com/in/akhil-saini-cs" target="_blank"
                 >
                     <HiDownload />
