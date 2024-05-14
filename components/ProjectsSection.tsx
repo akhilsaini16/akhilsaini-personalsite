@@ -21,7 +21,7 @@ const projectsData = [
 
 export default function ProjectsSection() {
     return(
-        <div className="place-self-center" id="projects">
+        <div className="place-self-center" id="Projects">
         <h1 className="text-center text-5xl mb-20 mt-24">My Projects</h1>
         <Card className="place-self-center bg-slate-400 text-center font-bold text-black mt-4 mb-8 md:mb-12 h-[400px] w-[400px]">
             <CardHeader>
