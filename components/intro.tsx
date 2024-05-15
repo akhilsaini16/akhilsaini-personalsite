@@ -6,7 +6,14 @@ import { motion } from "framer-motion";
 
 export default function Intro() {
     return (
-        <section>
+        <section
+            id="Intro"
+            // style={{
+            //     backgroundImage: 'radial-gradient(100% 100% at 0% 50%, #020617 50%, #DD335C',
+            //     // backgroundImage: 'radial-gradient(100% 100% at 50% 50%, #020617 50%, #DD335C',
+            //     // height: '85vh'
+            // }}
+        >
             <div className="grid grid-cols-1 lg:grid-cols-12 mt-20 px-12 py-12">
                 <div className="col-span-7 place-self-center">
                     <h1 className="text-white relative flex mb-20 text:4xl lg:text-6xl">
@@ -22,6 +29,7 @@ export default function Intro() {
                         alt="intro picture"
                         width={600}
                         height={600}
+                        className="rounded-xl"
                     />
                 </div>
             
