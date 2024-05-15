@@ -1,6 +1,8 @@
+"use client"
+
 import React from "react";
 import {Card, CardHeader, CardBody, CardFooter, Image, Button, Link} from "@nextui-org/react";
-import SlideUp from "./slide-up";
+// import SlideUp from "./slide-up";
 
 import ProjectCard from "./ProjectCard";
 import { BsArrowUpRightSquare, BsGithub } from "react-icons/bs";
@@ -46,42 +48,38 @@ export default function ProjectsSection() {
             <div className="flex flex-col space-y-28">
                 {projects.map((project, idx) => {
                     return(
-                        <div className="lg:px-40">
-                        {/* <div> */}
-                            {/* <Card > */}
-                            {/* <SlideUp offset="-300px 0px -300px 0px"> */}
-                            <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
-                                <div className=" md:w-1/2">
-                                    <Image
-                                        src="/images/drug.png"
-                                        alt=""
-                                        width={1000}
-                                        height={1000}
-                                    />
-                                </div>
-                                {/* <Card> */}
-                                <div className="px-10 mt-8 md:w-1/2">
-                                    <h1 className="text-4xl font-bold mb-6">{project.name}</h1>
-                                    <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
-                                        {project.description}
-                                    </p>
-                                    <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
-                                    {project.skills.map((item, idx) => {
-                                        return (
-                                        <p
-                                            key={idx}
-                                            className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
-                                        >
-                                            {item.skill}
-                                        </p>
-                                        )
-                                    })}
+                        <div key={idx}>
+                            <div className="flex flex-col md:flex-row md:space-x-12">
+                                {/* <div className="md:w-1/2"> */}
+                                    <div className=" md:w-1/2">
+                                        <img
+                                            src={project.image}
+                                            alt=""
+                                            width={500}
+                                            height={1000}
+                                            className="rounded-xl shadow-xl"
+                                        />
                                     </div>
-                                </div>
-                                {/* </Card> */}
+                                    <div className="md:w-1/2">
+                                        <h1 className="text-4xl font-bold mb-6">{project.name}</h1>
+                                        <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
+                                            {project.description}
+                                        </p>
+                                        <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
+                                        {project.skills.map((item, idx) => {
+                                            return (
+                                            <p
+                                                key={idx}
+                                                className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
+                                            >
+                                                {item.skill}
+                                            </p>
+                                            )
+                                        })}
+                                        </div>
+                                    </div>
+                                {/* </div> */}
                             </div>
-                            {/* </SlideUp> */}
-                        {/* </Card> */}
                         </div>
                 )})}
             
