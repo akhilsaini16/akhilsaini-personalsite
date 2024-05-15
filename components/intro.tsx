@@ -14,7 +14,7 @@ export default function Intro() {
             //     // height: '85vh'
             // }}
         >
-            <div className="grid grid-cols-1 lg:grid-cols-12 mt-20 px-12 py-12">
+            <div className="grid grid-cols-1 lg:grid-cols-12 mt-20">
                 <div className="col-span-7 place-self-center">
                     <h1 className="text-white relative flex mb-20 text:4xl lg:text-6xl">
                         Akhil Saini</h1>
@@ -34,7 +34,7 @@ export default function Intro() {
                 </div>
             
             
-                <div className="flex col-start-1 col-span-7">
+                <div className="flex col-start-1 col-span-7 md:mt-0 mt-10">
                     <a className="group inline-flex gap-1.5 items-center text-xl rounded-xl px-4 py-3 bg-opacity-20 hover:bg-opacity-30 mr-4 bg-white text-black transition-transform hover:scale-105"
                     href ="https://www.linkedin.com/in/akhil-saini-cs" target="_blank"
                     >
