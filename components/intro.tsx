@@ -1,8 +1,9 @@
 "use client"
-import { HiDownload } from "react-icons/hi";
+import { HiArrowDown, HiDownload } from "react-icons/hi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Intro() {
     return (
@@ -56,6 +57,19 @@ export default function Intro() {
                         Resume
                     </a>
                 </div>
+            </div>
+            <div className="flex flex-row justify-center">
+                <Link
+                    href={"#About"}
+                    // activeClass="active"
+                    // spy={true}
+                    // smooth ={true}
+                    // offset={-100}
+                    // duration ={500}
+                >
+                    <HiArrowDown size={35} className="animate-bounce" />
+                </Link>
+
             </div>
         </section>
     );

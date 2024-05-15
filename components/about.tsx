@@ -1,4 +1,6 @@
-
+import Link from "next/link"
+import SlideUp from "./slide-up"
+import { HiArrowDown } from "react-icons/hi"
 const skills = [
     {skill: "Python"},
     {skill: "Java"},
@@ -41,6 +43,7 @@ export default function Skills() {
               </div>
               <div className="text-center md:w-1/2 md:text-left">
                 <h1 className="text-2xl font-bold mb-6">My Skills</h1>
+                <SlideUp offset="-300px 0px -300px 0px">
                 <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
                   {skills.map((item, idx) => {
                     return (
@@ -53,34 +56,17 @@ export default function Skills() {
                     )
                   })}
                 </div>
+                </SlideUp>
               </div>
             </div>
           </div>
+          <div className="flex flex-row justify-center">
+                <Link
+                    href={"#Projects"}
+                >
+                    <HiArrowDown size={35} className="animate-bounce" />
+                </Link>
+            </div>
         </section>
       )
-    // return (
-    //     <section id="Skills" className="px-12 py-12">
-    //         <div className="my-12 pb-12 md:pt-16 md:pb-48">
-    //         <h1 className="text-center font-bold text-4xl">
-    //             My Skills/Interests
-    //             <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
-    //         </h1>
-    //             <div className="flex flex-col items-stretch justify-center align-top md:flex-row md:text-left">
-    //                 <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
-    //                     {skills.map((item, idx) => {
-    //                         return (
-    //                         <p 
-    //                             key={idx} 
-    //                             className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
-    //                         >
-    //                             {item.skill}
-    //                         </p>
-    //                         )
-    //                     })}
-    //                 </div>
-    //             </div>
-    //         </div>
-    //     </section>
-
-    // );
   }
