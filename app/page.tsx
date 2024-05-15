@@ -6,7 +6,7 @@ import ProjectsSection from "@/components/ProjectsSection";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-blue-600 mx-auto"
+    <main className="flex min-h-screen flex-col bg-blue-600 mx-auto px-12 py-12"
     // style={{
     //   backgroundImage: 'radial-gradient(100% 100% at 50% 50%, #020617, #DD335C',
     //   // height: '80vh'
