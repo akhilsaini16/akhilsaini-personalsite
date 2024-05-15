@@ -8,30 +8,6 @@ export default function Navbar() {
             <a href={"/"} className="text-3xl text-white font-semibold">
                 LOGO
             </a>
-            {/* <div className="menu">
-                <ul className="flex p-4 md:p-0 sm:flex-row md:space-x-8">
-                    <li>
-                        <Link href={"#about"} 
-                        className="block py-2 pl-3 pr-4 sm:text-xl rounded md:p-0 hover:text-white">
-                            About
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href={"#projects"} scroll={true}
-                        className="block py-2 pl-3 pr-4 sm:text-xl rounded md:p-0 hover:text-white">
-                            Projects
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href={"#about"} 
-                        className="block py-2 pl-3 pr-4 sm:text-xl rounded md:p-0 hover:text-white">
-                            Skills
-                        </Link>
-                    </li>
-                </ul>
-                
-            </div> */}
-            
             <div className="flex p-4 md:p-0 sm:flex-row md:space-x-8">
                 {items.map((item) =>(
                     <a

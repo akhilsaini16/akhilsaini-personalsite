@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Intro from "@/components/intro";
 import Navbar from "@/components/Navbar";
-import About from "@/components/About";
+import About from "@/components/about";
 import ProjectsSection from "@/components/ProjectsSection";
 
 export default function Home() {

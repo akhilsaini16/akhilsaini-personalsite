@@ -7,36 +7,31 @@ import Link from "next/link";
 
 export default function Intro() {
     return (
-        <section
-            id="Intro"
-            // style={{
-            //     backgroundImage: 'radial-gradient(100% 100% at 0% 50%, #020617 50%, #DD335C',
-            //     // backgroundImage: 'radial-gradient(100% 100% at 50% 50%, #020617 50%, #DD335C',
-            //     // height: '85vh'
-            // }}
-        >
-            <div className="grid grid-cols-1 lg:grid-cols-12 mt-20">
-                <div className="col-span-7 place-self-center">
-                    <h1 className="text-white relative flex mb-20 text:4xl lg:text-6xl">
+        <section id="Intro">
+            <div className="flex-col text-center items-center justify-center animate-fadeIn animation-delay-4 py-16 sm:py-32 md:py-44 md:flex-row md:text-left grid grid-cols-1 lg:grid-cols-12">
+                <div className="col-span-7 lg:pl-32">
+                    <h1 className="text-white text-4xl lg:pb-10 pb-5 font-bold mt-6 md:mt-0 md:text-7xl">
                         Akhil Saini</h1>
-                    <p className="text-[#ADB7BE] text-4xl relative flex">
-                        I am a University of Connecticut Graduate with a bachelors degree in 
-                        Computer Science, concentrated on Data Analytics.
+                    <p className="text-[#ADB7BE] text-4xl relative flex lg:pb-0 pb-5">
+                        Aspiring Software Engineer/Data Engineer
                     </p>
                 </div>            
                 <div className="relative col-span-5">
-                    <Image 
+                    <Image
                         src="/images/SelfPicture.png"
                         alt="intro picture"
                         width={600}
                         height={600}
-                        className="rounded-xl"
+                        className="rounded-full shadow-2xl"
                     />
                 </div>
             
             
-                <div className="flex col-start-1 col-span-7 md:mt-0 mt-10">
+                <div className="flex col-start-1 col-span-7 lg:mt-0 mt-10 lg:pl-32">
                     <a className="group inline-flex gap-1.5 items-center text-xl rounded-xl px-4 py-3 bg-opacity-20 hover:bg-opacity-30 mr-4 bg-white text-black transition-transform hover:scale-105"
+                        style={{
+                            backgroundImage: 'radial-gradient(1000% 100% at 50% 50%, #0077B5, #333333',
+                        }}
                     href ="https://www.linkedin.com/in/akhil-saini-cs" target="_blank"
                     >
                         <FaLinkedin />
@@ -44,6 +39,10 @@ export default function Intro() {
                     </a>
 
                     <a className="group inline-flex gap-1.5 items-center text-xl rounded-xl px-4 py-3 bg-opacity-20 hover:bg-opacity-30 mr-4 bg-white text-black transition-transform hover:scale-105"
+                        style={{
+                            backgroundImage: 'radial-gradient(100% 100% at 50% 50%, #8B949E, #C9D1D9',
+                            // backgroundImage: 'radial-gradient(100% 100% at 0% 50%, #0077B5 50%, #0077B5',
+                        }}
                     href ="https://github.com/akhilsaini16" target="_blank"
                     >
                         <FaGithub />
@@ -61,15 +60,9 @@ export default function Intro() {
             <div className="flex flex-row justify-center">
                 <Link
                     href={"#About"}
-                    // activeClass="active"
-                    // spy={true}
-                    // smooth ={true}
-                    // offset={-100}
-                    // duration ={500}
                 >
                     <HiArrowDown size={35} className="animate-bounce" />
                 </Link>
-
             </div>
         </section>
     );
