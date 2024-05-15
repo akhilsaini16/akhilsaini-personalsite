@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Navbar() {
   const items = ['About', 'Projects']
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-90">
+    <nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-90" id="Navbar">
         <div className="flex flex-wrap items-center justify-between mx-auto py-4 px-8">
             <a href={"/"} className="text-3xl text-white font-semibold">
                 LOGO
