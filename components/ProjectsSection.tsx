@@ -1,12 +1,26 @@
 import React from "react";
 import SlideUp from "./slide-up"
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
+    {
+      name: "Storm Tracking Application",
+      description:
+        "Continously improved a weather tracking application with a professor at UConn. Deployed the application to the IOS app store.",
+      image: "/images/SaferLogo.png",
+      link: "https://apps.apple.com/fi/app/safer-storm-safety/id1631027712",
+      skills: [
+        {skill: "Flutter"},
+        {skill: "Javascript"},
+        {skill: "MySQL"},
+      ],
+    },
     {
       name: "Drug Afforability Application",
       description:
         "A drug affordability web-application that uses a copay algorithm to allow users to find the cheapest drug alternative.",
       image: "/images/drug1.png",
+      link: "None",
       skills: [
         {skill: "Next.js"},
         {skill: "Javascript"},
@@ -20,6 +34,7 @@ const projects = [
         description:
           "A habit tracking Android application where users create mental and physical health goals to pursue.",
         image: "/images/health.png",
+        link: "None",
         skills: [
           {skill: "Kotlin"},
           {skill: "TypeScript"},
@@ -32,6 +47,7 @@ const projects = [
         description:
           "A habit tracking Android application where users create mental and physical health goals to pursue.",
         image: "/images/health.png",
+        link: "None",
         skills: [
           {skill: "Kotlin"},
           {skill: "TypeScript"},
@@ -72,6 +88,18 @@ const projects = [
                                             <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
                                                 {project.description}
                                             </p>
+                                        </div>
+                                        <div>
+                                        {project.link !== "None" && (
+                                          <a
+                                            href={project.link}
+                                            className="text-blue-500 underline"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                          >
+                                            <FaExternalLinkAlt />
+                                          </a>
+                                        )}
                                         </div>
                                         <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
                                         {project.skills.map((skill, skillIdx) => {
