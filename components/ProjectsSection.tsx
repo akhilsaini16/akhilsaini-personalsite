@@ -79,9 +79,8 @@ const projects = [
                         //     // opacity: scrollYProgress,
                         //   }}
                         // >
-                        <div>
+                        // <div>
                         <div key={idx} className="bg-white shadow-xl rounded-lg animate-slideUpCubiBezier animation-delay-2 overflow-hidden">
-                                {/* <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12"> */}
                                 <div className="flex flex-col md:flex-row">
                                     <div className=" md:w-1/3">
                                         <img
@@ -127,11 +126,8 @@ const projects = [
                                         </div>
                                     </div>
                                 </div>
-                            {/* </SlideUp> */}
                         </div>
-                        {/* </SlideUp> */}
-                        {/* </motion.section> */}
-                        </div>
+                        // </div>
                 )})}
             
             </div>
