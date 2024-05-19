@@ -3,26 +3,38 @@ import Intro from "@/components/intro";
 import Navbar from "@/components/Navbar";
 import About from "@/components/about";
 import ProjectsSection from "@/components/ProjectsSection";
+import MountainView from "@/components/mountainview";
+import Temp from "@/components/tempStarter";
 
+// export default function Home() {
+//   return (
+//     <main className="flex min-h-screen flex-col mx-auto bg-[#06141D]"
+//     >
+//       <Navbar />
+//       <MountainView />
+//       <Intro />
+//       <About />
+//       <ProjectsSection />
+//     </main>
+//   );
+// }
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-blue-600 mx-auto px-12 py-12"
-    // style={{
-    //   backgroundImage: 'radial-gradient(100% 100% at 50% 50%, #020617, #DD335C',
-    //   // height: '80vh'
-    // }}
-    >
+    <main className="flex flex-col min-h-screen mx-auto bg-[#06141D]">
       <Navbar />
-      {/* <div
-        style={{
-          backgroundImage: 'radial-gradient(100% 100% at 0% 50%, #020617 50%, #DD335C',
-          height: '80vh'
-        }}
-      ><Intro /></div> */}
-      <Intro />
-      {/* <Intro /> */}
-      <About />
-      <ProjectsSection />
+      <Temp />
+      {/* <section id="MountainView" className="h-screen">
+        <MountainView />
+      </section> */}
+      {/* <section id="Intro" className="sh-screen">
+        <Intro />
+      </section> */}
+      <section id="About">
+        <About />
+      </section>
+      <section id="ProjectsSection" className="h-screen bg-[#06141D]">
+        <ProjectsSection />
+      </section>
     </main>
   );
 }

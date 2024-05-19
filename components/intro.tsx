@@ -4,6 +4,8 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
+// import Link from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
 
 export default function Intro() {
     return (
@@ -63,6 +65,13 @@ export default function Intro() {
                 >
                     <HiArrowDown size={35} className="animate-bounce" />
                 </Link>
+                {/* <ScrollLink
+                    to={"#About"}
+                    smooth={true}
+                    duration={1000}
+                >
+                    <HiArrowDown size={35} className="animate-bounce" />
+                </ScrollLink> */}
             </div>
         </section>
     );

@@ -1,6 +1,8 @@
 "use client"
 import { motion, useScroll, useTransform } from "framer-motion";
+import Link from "next/link";
 import React, { useRef } from "react";
+import { HiArrowDown } from "react-icons/hi";
 
 export default function MountainView() {
     const ref = useRef(null);

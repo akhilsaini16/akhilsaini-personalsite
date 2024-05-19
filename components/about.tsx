@@ -58,7 +58,7 @@ const InfrastructureAndDevOps = [
 export default function About() {
     return (
         <section id="About">
-          <div className="my-12 pb-12 md:pt-16 md:pb-48 mx-auto">
+          <div className="px-12 py-12 my-12 pb-12 md:pt-16 md:pb-12 mx-auto">
             <h1 className="text-center font-bold text-4xl">
               About Me
               <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
@@ -69,10 +69,40 @@ export default function About() {
                 <h1 className="text-center text-2xl font-bold mb-6 md:text-left">
                   Get to know me!
                 </h1>
+
+                <p>
+                  Hi, my name is Akhil and I am a{" "}
+                  <span className="font-bold">{"highly ambitious"}</span>,
+                  <span className="font-bold">{" self-motivated"}</span>, and
+                  <span className="font-bold">{" driven"}</span> software engineer
+                  based in CHANGE.
+                </p>
+                <br />
+                <p>
+                  I am a 2024 graduate from the University of Connecicut, with a BS in
+                  Computer Science, with a concentration in {" "}
+                  <span className="font-bold">{"Computational Data Analytics"}</span>.
+                </p>
+                <br />
+                <p>
+                Through my education, work experience, and personal projects, 
+                I have discovered a great interest for software engineering, 
+                data analytics, AI/ML, and especially cloud computing. 
+                I am very well versed with AWS and have 
+                utilized many resources from AWS in my experience.
+                </p>
+                <br />
+                <p>
+                  I am continously learning new skills, and working on new projects.
+                  I have a passion for technology and am excited to see where my 
+                  career takes me and am always open to new opportunities.
+                </p>
+
               </div>
+
               <div className="text-center md:w-1/2 md:text-left">
                 <h1 className="text-2xl font-bold mb-6">Skills</h1>
-                <SlideUp offset="-300px 0px -300px 0px">
+                {/* <SlideUp offset="-300px 0px -300px 0px"> */}
                   <div>
                     <div className="mb-6">
                       <h1 className="text-xl font-bold">Languages</h1>
@@ -132,7 +162,7 @@ export default function About() {
                     )
                   })}
                 </div> */}
-                </SlideUp>
+                {/* </SlideUp> */}
               </div>
             </div>
           </div>
