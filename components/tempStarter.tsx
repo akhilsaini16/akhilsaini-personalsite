@@ -1,15 +1,35 @@
 "use client"
-import { HiArrowDown, HiDownload } from "react-icons/hi";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import Link from "next/link";
-// import Link from 'react-scroll';
-import { Link as ScrollLink } from 'react-scroll';
+import React, { useRef } from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { HiArrowDown, HiDownload } from "react-icons/hi";
 
-export default function Intro() {
-    return (
-        <section id="Intro">
+export default function MountainView() {
+    const ref = useRef(null);
+    const { scrollYProgress } = useScroll({
+        target: ref,
+        offset: ["start start", "end start"],
+    });
+    const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+    const textY = useTransform(scrollYProgress, [0, 1], ["0%", "200%"]);
+
+    return(
+        <div
+            ref ={ref}
+            className="w-full h-screen overflow-hidden relative grid place-items-center"
+        >
+            <motion.div
+                className="absolute inset-0 z-0"
+                style={{
+                backgroundImage: `url(/images/Group1.png)`,
+                backgroundPosition: "bottom",
+                backgroundSize: "cover",
+                y: backgroundY,
+                }}
+            >
+            <section id="Intro">
             <div className="flex-col text-center items-center justify-center animate-fadeIn animation-delay-4 py-16 sm:py-32 md:py-44 md:flex-row md:text-left grid grid-cols-1 lg:grid-cols-12">
                 <div className="col-span-7 lg:pl-32">
                     <h1 className="text-white text-4xl lg:pb-10 pb-5 font-bold mt-6 md:mt-0 md:text-7xl">
@@ -17,7 +37,7 @@ export default function Intro() {
                     <p className="text-[#ADB7BE] text-4xl relative flex lg:pb-0 pb-5">
                         Aspiring Software Engineer/Data Engineer
                     </p>
-                </div>            
+                </div>
                 <div className="relative col-span-5">
                     <Image
                         src="/images/SelfPicture.png"
@@ -59,20 +79,18 @@ export default function Intro() {
                     </a>
                 </div>
             </div>
-            <div className="flex flex-row justify-center">
-                <Link
-                    href={"#About"}
-                >
-                    <HiArrowDown size={35} className="animate-bounce" />
-                </Link>
-                {/* <ScrollLink
-                    to={"#About"}
-                    smooth={true}
-                    duration={1000}
-                >
-                    <HiArrowDown size={35} className="animate-bounce" />
-                </ScrollLink> */}
-            </div>
+            
         </section>
-    );
+            </motion.div>
+            <div
+                className="absolute inset-0 z-20"
+                style={{
+                    backgroundImage: `url(/images/Group2.png)`,
+                backgroundPosition: "bottom",
+                backgroundSize: "cover",
+                }}
+            />
+
+        </div>
+    )
 }

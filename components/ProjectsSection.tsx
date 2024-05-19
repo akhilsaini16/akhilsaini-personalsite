@@ -1,6 +1,10 @@
-import React from "react";
+"use client"
+
+import React, { useRef } from "react";
 import SlideUp from "./slide-up"
 import { FaExternalLinkAlt } from "react-icons/fa";
+// import { useScroll } from "@react-three/drei";
+import { useScroll, motion, useViewportScroll, useTransform } from "framer-motion";
 
 const projects = [
     {
@@ -42,24 +46,19 @@ const projects = [
           {skill: "AWS API Gateway"},
         ],
       },
-      {
-        name: "Mobile Health Application",
-        description:
-          "A habit tracking Android application where users create mental and physical health goals to pursue.",
-        image: "/images/health.png",
-        link: "None",
-        skills: [
-          {skill: "Kotlin"},
-          {skill: "TypeScript"},
-          {skill: "DynamoDB"},
-          {skill: "AWS API Gateway"},
-        ],
-      },
   ]
 
   export default function ProjectsSection() {
+    // const ref = useRef<HTMLElement>(null);
+    // const { scrollYProgress } = useScroll({
+    //   target: ref,
+    //   offset: ["0 1", "1.1 1"]
+    // });
+    // const { scrollYProgress } = useViewportScroll();
+    // const scale = useTransform(scrollYProgress, [0, .8], [.1, 1]);
+    // const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
     return (
-        <section id="Projects" className="flex justify-center">
+        <section id="Projects" className="flex justify-center bg-[#06141D]">
             <div className="w-full max-w-4xl my-12 pb-12 md:pt-16 md:pb-48 mx-auto">
             {/* <div className="w-full max-w-4xl p-8"> */}
             <h1 className="text-center font-bold md:pb-6 text-4xl">
@@ -70,7 +69,17 @@ const projects = [
             <div className="flex flex-col space-y-8">
                 {projects.map((project, idx) => {
                     return(
-                        <SlideUp offset="-300px 0px -300px 0px">
+                        // <SlideUp offset="-300px 0px -300px 0px">
+                        // <motion.section
+                        //   key={idx}
+                        //   style={{
+                        //     scale,
+                        //     opacity,
+                        //     // scale: scrollYProgress,
+                        //     // opacity: scrollYProgress,
+                        //   }}
+                        // >
+                        <div>
                         <div key={idx} className="bg-white shadow-xl rounded-lg animate-slideUpCubiBezier animation-delay-2 overflow-hidden">
                                 {/* <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12"> */}
                                 <div className="flex flex-col md:flex-row">
@@ -120,7 +129,9 @@ const projects = [
                                 </div>
                             {/* </SlideUp> */}
                         </div>
-                        </SlideUp>
+                        {/* </SlideUp> */}
+                        {/* </motion.section> */}
+                        </div>
                 )})}
             
             </div>
