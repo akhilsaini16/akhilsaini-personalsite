@@ -75,8 +75,7 @@ export default function About() {
                   Hi, my name is Akhil and I am a{" "}
                   <span className="font-bold">{"highly ambitious"}</span>,
                   <span className="font-bold">{" self-motivated"}</span>, and
-                  <span className="font-bold">{" driven"}</span> software engineer
-                  based in CHANGE.
+                  <span className="font-bold">{" driven"}</span> software engineer.
                 </p>
                 <br />
                 <p>
@@ -95,8 +94,8 @@ export default function About() {
                 <br />
                 <p>
                   I am continously learning new skills, and working on new projects.
-                  I have a passion for technology and am excited to see where my 
-                  career takes me and am always open to new opportunities.
+                  I have a passion for technology and am excited to see where
+                  my career takes me. I am always open to new opportunities.
                 </p>
 
               </div>
