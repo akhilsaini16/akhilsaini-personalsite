@@ -19,6 +19,7 @@ const Development = [
   {skill: "CSS"},
   {skill: "React"},
   {skill: "Next.js"},
+  {skill: "Vercel"},
 ]
 
 const InfrastructureAndDevOps = [
