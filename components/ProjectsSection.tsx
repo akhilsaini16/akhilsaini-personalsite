@@ -80,7 +80,7 @@ const projects = [
                         //   }}
                         // >
                         // <div>
-                        <div key={idx} className="bg-white shadow-xl rounded-lg animate-slideUpCubiBezier animation-delay-2 overflow-hidden">
+                        <div key={idx} className="bg-[#d1cece] shadow-xl rounded-lg animate-slideUpCubiBezier animation-delay-2 overflow-hidden">
                                 <div className="flex flex-col md:flex-row">
                                     <div className=" md:w-1/3">
                                         <img
@@ -114,10 +114,10 @@ const projects = [
                                             return (
                                             <p
                                                 key={skillIdx}
-                                                style={{
-                                                    backgroundImage: 'radial-gradient(100% 100% at 0% 50%, #020617 50%, #DD335C',
-                                                }}
-                                                className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
+                                                // style={{
+                                                //     backgroundImage: 'radial-gradient(100% 100% at 0% 50%, #020617 50%, #DD335C',
+                                                // }}
+                                                className="px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold bg-[#06141D]"
                                             >
                                                 {skill.skill}
                                             </p>

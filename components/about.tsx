@@ -19,6 +19,7 @@ const Development = [
   {skill: "CSS"},
   {skill: "React"},
   {skill: "Next.js"},
+  {skill: "Vercel"},
 ]
 
 const InfrastructureAndDevOps = [
@@ -58,7 +59,7 @@ const InfrastructureAndDevOps = [
 export default function About() {
     return (
         <section id="About">
-          <div className="px-12 py-12 my-12 pb-12 md:pt-16 md:pb-12 mx-auto">
+          <div className="px-12 py-12 my-12 md:pt-16 mx-auto">
             <h1 className="text-center font-bold text-4xl">
               About Me
               <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
@@ -166,7 +167,7 @@ export default function About() {
               </div>
             </div>
           </div>
-          <div className="flex flex-row justify-center">
+          <div className="pb-2 flex flex-row justify-center">
                 <Link
                     href={"#Projects"}
                 >
