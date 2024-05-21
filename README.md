@@ -1,8 +1,9 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is my personal portfolio, built with [Next.js](https://nextjs.org/), [Typescript](https://www.typescriptlang.org), [Framer Motion](https://www.framer.com/motion/),
+ and [Tailwind CSS]([https://www.framer.com/motion/](https://tailwindcss.com)), deployed with [Vercel](https://www.vercel.com).
 
 ## Run Locally
 
-Download the repu, then run the development server:
+Download the repo, then run the development server:
 
 ```bash
 npm run dev
