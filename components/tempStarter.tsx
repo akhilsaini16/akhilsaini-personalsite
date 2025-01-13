@@ -34,7 +34,7 @@ export default function MountainView() {
                 <div className="col-span-7 lg:pl-32">
                     <h1 className="text-white text-4xl lg:pb-10 pb-5 font-bold mt-6 md:mt-0 md:text-7xl">
                         Akhil Saini</h1>
-                    <p className="text-[#ADB7BE] text-4xl relative flex lg:pb-0 pb-5">
+                    <p className="text-[#000000] text-4xl relative flex lg:pb-0 pb-5">
                         Aspiring Software Engineer/Data Engineer
                     </p>
                 </div>
@@ -49,7 +49,7 @@ export default function MountainView() {
                 </div>
             
             
-                <div className="flex col-start-1 col-span-7 lg:mt-0 mt-10 lg:pl-32">
+                {/* <div className="flex col-start-1 col-span-7 lg:mt-0 mt-10 lg:pl-32">
                     <a className="group inline-flex gap-1.5 items-center text-xl rounded-xl px-4 py-3 bg-opacity-20 hover:bg-opacity-30 mr-4 bg-white text-black transition-transform hover:scale-105"
                         style={{
                             backgroundImage: 'radial-gradient(1000% 100% at 50% 50%, #0077B5, #333333',
@@ -77,7 +77,7 @@ export default function MountainView() {
                         <HiDownload />
                         Resume
                     </a>
-                </div>
+                </div> */}
             </div>
             
         </section>
