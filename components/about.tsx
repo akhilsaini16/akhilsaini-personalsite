@@ -1,6 +1,7 @@
 import Link from "next/link"
 import SlideUp from "./slide-up"
-import { HiArrowDown } from "react-icons/hi"
+import { HiArrowDown, HiDownload } from "react-icons/hi"
+import { FaGithub, FaLinkedin } from "react-icons/fa"
 const Languages = [
     {skill: "Python"},
     {skill: "Java"},
@@ -59,7 +60,38 @@ const InfrastructureAndDevOps = [
 export default function About() {
     return (
         <section id="About">
-          <div className="px-12 py-12 my-12 md:pt-16 mx-auto">
+          
+          <div className="px-12 py-12 md:pt-16 mx-auto">
+          <div className="lg:mt-0 mt-10 flex justify-center items-center pb-12">
+                    <a className="group inline-flex gap-1.5 items-center text-xl rounded-xl px-4 py-3 bg-opacity-20 hover:bg-opacity-30 mr-4 bg-white text-black transition-transform hover:scale-105"
+                        style={{
+                            backgroundImage: 'radial-gradient(1000% 100% at 50% 50%, #0077B5, #333333',
+                        }}
+                    href ="https://www.linkedin.com/in/akhil-saini-cs" target="_blank"
+                    >
+                        <FaLinkedin />
+                        Linkedin
+                    </a>
+
+                    <a className="group inline-flex gap-1.5 items-center text-xl rounded-xl px-4 py-3 bg-opacity-20 hover:bg-opacity-30 mr-4 bg-white text-black transition-transform hover:scale-105"
+                        style={{
+                            backgroundImage: 'radial-gradient(100% 100% at 50% 50%, #8B949E, #C9D1D9',
+                            // backgroundImage: 'radial-gradient(100% 100% at 0% 50%, #0077B5 50%, #0077B5',
+                        }}
+                    href ="https://github.com/akhilsaini16" target="_blank"
+                    >
+                        <FaGithub />
+                        Github
+                    </a>
+
+                    <a className="group inline-flex gap-1.5 items-center text-xl rounded-xl px-4 py-3 bg-opacity-20 hover:bg-opacity-30 mr-4 bg-white text-black transition-transform hover:scale-105"
+                    href="/images/Akhil_Resume_(11:21).pdf"
+                    download="Akhil_Saini_Resume.pdf"
+                    >
+                        <HiDownload />
+                        Resume
+                    </a>
+                </div>
             <h1 className="text-center font-bold text-4xl">
               About Me
               <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
