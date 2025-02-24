@@ -57,23 +57,23 @@ export default function ProjectsSection() {
           {/* Modal */}
           {selectedProject && (
             <div 
-              className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50" 
+              className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 p-4"
               aria-hidden="true"
               onClick={closeModal} // Close when clicking outside
             >
               <div 
-                className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full relative"
+                className="bg-white p-4 sm:p-6 rounded-lg shadow-lg w-11/12 sm:max-w-md max-h-[80vh] overflow-y-auto relative"
                 onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside modal
               >
                 <button 
-                  className="absolute top-2 right-2 text-gray-500 hover:text-gray-700" 
+                  className="absolute top-2 right-2 p-3 text-lg sm:text-xl text-gray-500 hover:text-gray-700"
                   onClick={closeModal}
                 >
                   ✕
                 </button>
-                <h2 className="text-2xl text-gray-500 font-bold mb-4">{selectedProject.name}</h2>
-                <p className="text-gray-500">{selectedProject.date}</p>
-                <p className="mt-4 text-gray-500">{selectedProject.description}</p>
+                <h2 className="text-lg sm:text-2xl text-gray-500 font-bold mb-3">{selectedProject.name}</h2>
+                <p className="text-sm sm:text-base text-gray-500 mb-2">{selectedProject.date}</p>
+                <p className="mt-2 text-sm sm:text-base text-gray-500">{selectedProject.description}</p>
               </div>
             </div>
           )}
