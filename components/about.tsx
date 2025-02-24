@@ -62,8 +62,10 @@ export default function About() {
         <section id="About">
           
           <div className="px-12 py-12 md:pt-16 mx-auto">
-          <div id="links" className="lg:mt-0 mt-10 flex justify-center items-center pb-12">
-                    <a className="group inline-flex gap-1.5 items-center text-xl rounded-xl px-4 py-3 bg-opacity-20 hover:bg-opacity-30 mr-4 bg-white text-black transition-transform hover:scale-105"
+          <div id="links" className="lg:mt-0 mt-10 flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4 pb-12">
+                    <a className="group inline-flex gap-1.5 items-center text-lg sm:text-xl rounded-xl px-4 py-3
+                    bg-opacity-20 hover:bg-opacity-30 bg-white text-black transition-transform
+                    hover:scale-105 active:scale-95"
                         style={{
                             backgroundImage: 'radial-gradient(1000% 100% at 50% 50%, #0077B5, #333333',
                         }}
@@ -73,7 +75,9 @@ export default function About() {
                         Linkedin
                     </a>
 
-                    <a className="group inline-flex gap-1.5 items-center text-xl rounded-xl px-4 py-3 bg-opacity-20 hover:bg-opacity-30 mr-4 bg-white text-black transition-transform hover:scale-105"
+                    <a className="group inline-flex gap-1.5 items-center text-lg sm:text-xl rounded-xl px-4 py-3
+                    bg-opacity-20 hover:bg-opacity-30 bg-white text-black transition-transform
+                    hover:scale-105 active:scale-95"
                         style={{
                             backgroundImage: 'radial-gradient(100% 100% at 50% 50%, #8B949E, #C9D1D9',
                             // backgroundImage: 'radial-gradient(100% 100% at 0% 50%, #0077B5 50%, #0077B5',
@@ -84,7 +88,9 @@ export default function About() {
                         Github
                     </a>
 
-                    <a className="group inline-flex gap-1.5 items-center text-xl rounded-xl px-4 py-3 bg-opacity-20 hover:bg-opacity-30 mr-4 bg-white text-black transition-transform hover:scale-105"
+                    <a className="group inline-flex gap-1.5 items-center text-lg sm:text-xl rounded-xl px-4 py-3
+                    bg-opacity-20 hover:bg-opacity-30 bg-white text-black transition-transform
+                    hover:scale-105 active:scale-95"
                     href="/images/Akhil_Resume_(11:21).pdf"
                     download="Akhil_Saini_Resume.pdf"
                     >
