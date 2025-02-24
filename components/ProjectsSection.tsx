@@ -37,18 +37,19 @@ export default function ProjectsSection() {
           </h1>
           
           {/* Project Cards Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full sm:w-auto max-w-6xl">
             {projects.map((project, idx) => (
               <div
               key={idx} 
               className="bg-gray-800 text-white p-6 rounded-lg shadow-md 
-              transition-transform transform hover:scale-105 hover:bg-gray-700 cursor-pointer"
+              transition-transform transform hover:scale-105 hover:bg-gray-700 cursor-pointer
+              "
               onClick={() => openModal(project)}
               >
-                <p className="text-sm font-semibold text-teal-400">{project.category}</p>
-                <p className="text-sm text-gray-400">{project.date}</p>
-                <h2 className="text-xl font-semibold">{project.name}</h2>
-                <p className="text-gray-300">{project.details}</p>
+                <p className="text-sm md:text-base font-semibold text-teal-400">{project.category}</p>
+                <p className="text-xs md:text-sm text-gray-400">{project.date}</p>
+                <h2 className="text-lg md:text-xl font-semibold">{project.name}</h2>
+                <p className="text-sm md:text-base text-gray-300">{project.details}</p>
               </div>
             ))}
           </div>
