@@ -10,6 +10,36 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+    // WhatsApp API"
+    {
+      category: "Data Analytics",
+      name: "WhatsApp API",
+      details: "**need to fill in**",
+      description: (
+        <>
+          <p>
+            Developed an <strong>automated phone number verification system</strong> using the <strong>WhatsApp API</strong> to send authentication messages to new users.
+          </p>
+          <p>
+            Faced a limitation where the WhatsApp account was only accessible via code, making real-time message tracking difficult. To resolve this, I <strong>deployed a webhook server on Vercel</strong> to listen for incoming messages and process authentication responses.
+          </p>
+          <ul className="list-disc list-inside mt-2">
+            <li>Integrated <strong>WhatsApp API</strong> for automated phone verification.</li>
+            <li>Designed and deployed a <strong>webhook server</strong> to capture and process incoming messages.</li>
+            <li>Enabled real-time message tracking and response handling through <strong>Vercel</strong>.</li>
+          </ul>
+          <br />
+          <p><strong>Technologies Used:</strong> WhatsApp API, Webhooks, Vercel</p>
+        </>
+      ),
+      date: "Feb 2025",
+      image: "/images/SaferLogo.png",
+      link: "",
+      skills: [
+        {skill: ""},
+      ],
+    },
+
     // Similarity Matrix
     {
       category: "Data Analytics",
@@ -73,29 +103,29 @@ export const projects: Project[] = [
       ],
     },
     
-    // Python Test Case Generator
-    {
-      category: "Web Development",
-      name: "Python Test Case Generator",
-      details: "**need to fill in**",
-      description:(
-        <>
-          <p>Created a website using <strong>Flask</strong> for users to generate test cases for their Python code.</p>
-          <p>Integrated <em>OpenAI APIs</em> to generate test cases.</p>
-          <ul className="list-disc list-inside mt-2">
-            <li>Supports various Python functions</li>
-            <li>Allows users to edit generated test cases</li>
-          </ul>
-          <p>Check out the <a href="https://example.com" target="_blank" className="text-blue-500 underline">GitHub repo</a>.</p>
-        </>
-      ),
-      date: "November 2024",
-      image: "/images/SaferLogo.png",
-      link: "",
-      skills: [
-        {skill: ""},
-      ],
-    },
+    // // Python Test Case Generator
+    // {
+    //   category: "Web Development",
+    //   name: "Python Test Case Generator",
+    //   details: "**need to fill in**",
+    //   description:(
+    //     <>
+    //       <p>Created a website using <strong>Flask</strong> for users to generate test cases for their Python code.</p>
+    //       <p>Integrated <em>OpenAI APIs</em> to generate test cases.</p>
+    //       <ul className="list-disc list-inside mt-2">
+    //         <li>Supports various Python functions</li>
+    //         <li>Allows users to edit generated test cases</li>
+    //       </ul>
+    //       <p>Check out the <a href="https://example.com" target="_blank" className="text-blue-500 underline">GitHub repo</a>.</p>
+    //     </>
+    //   ),
+    //   date: "November 2024",
+    //   image: "/images/SaferLogo.png",
+    //   link: "",
+    //   skills: [
+    //     {skill: ""},
+    //   ],
+    // },
 
     // Data Analysis & Visualization
     {
