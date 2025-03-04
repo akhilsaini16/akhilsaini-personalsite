@@ -62,7 +62,7 @@ export const projects: Project[] = [
           <ul className="list-disc list-inside mt-2">
             <li>Engineered a <strong>priority scoring model</strong> by assigning weighted values to key attributes for ranking individuals in the dataset.</li>
             <li>Executed <strong>extensive data cleaning</strong>, including format normalization, text standardization, and handling inconsistencies in structured data.</li>
-            <li>Utilized <strong>regular expressions</strong> and string manipulation techniques to remove prefixes (e.g., "Mr.", "Mrs.", "Dr.") and standardize names.</li>
+            <li>Utilized <strong>regular expressions</strong> and string manipulation techniques to remove prefixes (e.g., Mr., Mrs., Dr.) and standardize names.</li>
             <li>Transformed phone number formats by stripping <strong>non-essential metadata</strong> such as area codes to ensure consistency across datasets.</li>
             <li>Optimized dataset comparison by applying <strong>string similarity algorithms</strong> to identify and match related records.</li>
           </ul>
