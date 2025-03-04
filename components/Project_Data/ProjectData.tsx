@@ -199,7 +199,21 @@ export const projects: Project[] = [
       name: "Drug Afforability Application",
       details: "A web app that helps users find cheaper drug alternatives.",
       description: (
-        <></>
+        <>
+          <p>
+            Developed a <strong>drug affordability web application</strong> that helps users find the most cost-effective medication alternatives using a <strong>copay algorithm</strong>.
+          </p>
+          <p>
+            Designed and implemented both the <strong>frontend and backend</strong>, integrating <strong>AWS Cognito</strong> for secure user authentication.
+          </p>
+          <ul className="list-disc list-inside mt-2">
+            <li>Built the frontend using <strong>Next.js</strong> and <strong>JavaScript</strong> to provide a seamless user experience.</li>
+            <li>Engineered a <strong>serverless backend</strong> using <strong>AWS Lambda</strong> and <strong>DynamoDB</strong> for efficient data processing and scalability.</li>
+            <li>Implemented a <strong>copay calculation algorithm</strong> to help users compare drug pricing and affordability.</li>
+          </ul>
+          <br />
+          <p><strong>Technologies Used:</strong> Next.js, JavaScript, AWS Cognito, AWS Lambda, DynamoDB</p>
+        </>
       ),
       date: "Summer 2023",
       image: "/images/drug1.png",
