@@ -32,7 +32,7 @@ export default function Home() {
       <section id="About">
         <About />
       </section>
-      <section id="ProjectsSection" className="h-screen bg-[#06141D]">
+      <section id="ProjectsSection">
         <ProjectsSection />
       </section>
     </main>

@@ -62,8 +62,10 @@ export default function About() {
         <section id="About">
           
           <div className="px-12 py-12 md:pt-16 mx-auto">
-          <div className="lg:mt-0 mt-10 flex justify-center items-center pb-12">
-                    <a className="group inline-flex gap-1.5 items-center text-xl rounded-xl px-4 py-3 bg-opacity-20 hover:bg-opacity-30 mr-4 bg-white text-black transition-transform hover:scale-105"
+          <div id="links" className="lg:mt-0 mt-10 flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4 pb-12">
+                    <a className="group inline-flex gap-1.5 items-center text-lg sm:text-xl rounded-xl px-4 py-3
+                    bg-opacity-20 hover:bg-opacity-30 bg-white text-black transition-transform
+                    hover:scale-105 active:scale-95"
                         style={{
                             backgroundImage: 'radial-gradient(1000% 100% at 50% 50%, #0077B5, #333333',
                         }}
@@ -73,7 +75,9 @@ export default function About() {
                         Linkedin
                     </a>
 
-                    <a className="group inline-flex gap-1.5 items-center text-xl rounded-xl px-4 py-3 bg-opacity-20 hover:bg-opacity-30 mr-4 bg-white text-black transition-transform hover:scale-105"
+                    <a className="group inline-flex gap-1.5 items-center text-lg sm:text-xl rounded-xl px-4 py-3
+                    bg-opacity-20 hover:bg-opacity-30 bg-white text-black transition-transform
+                    hover:scale-105 active:scale-95"
                         style={{
                             backgroundImage: 'radial-gradient(100% 100% at 50% 50%, #8B949E, #C9D1D9',
                             // backgroundImage: 'radial-gradient(100% 100% at 0% 50%, #0077B5 50%, #0077B5',
@@ -84,7 +88,9 @@ export default function About() {
                         Github
                     </a>
 
-                    <a className="group inline-flex gap-1.5 items-center text-xl rounded-xl px-4 py-3 bg-opacity-20 hover:bg-opacity-30 mr-4 bg-white text-black transition-transform hover:scale-105"
+                    <a className="group inline-flex gap-1.5 items-center text-lg sm:text-xl rounded-xl px-4 py-3
+                    bg-opacity-20 hover:bg-opacity-30 bg-white text-black transition-transform
+                    hover:scale-105 active:scale-95"
                     href="/images/Akhil_Resume_(11:21).pdf"
                     download="Akhil_Saini_Resume.pdf"
                     >
@@ -98,7 +104,7 @@ export default function About() {
             </h1>
     
             <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
-              <div className="md:w-1/2 ">
+              <div id="Get to know me" className="md:w-1/2 ">
                 <h1 className="text-center text-2xl font-bold mb-6 md:text-left">
                   Get to know me!
                 </h1>
@@ -132,9 +138,8 @@ export default function About() {
 
               </div>
 
-              <div className="text-center md:w-1/2 md:text-left">
+              <div id="Skills" className="text-center md:w-1/2 md:text-left">
                 <h1 className="text-2xl font-bold mb-6">Skills</h1>
-                {/* <SlideUp offset="-300px 0px -300px 0px"> */}
                   <div>
                     <div className="mb-6">
                       <h1 className="text-xl font-bold">Languages</h1>
@@ -143,7 +148,7 @@ export default function About() {
                           return (
                             <p
                               key={idx}
-                              className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
+                              className="bg-gray-800 text-gray-200 px-4 py-2 mr-2 mt-2 rounded-lg"
                             >
                               {item.skill}
                             </p>
@@ -158,7 +163,7 @@ export default function About() {
                           return (
                             <p
                               key={idx}
-                              className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
+                              className="bg-gray-800 text-gray-200 px-4 py-2 mr-2 mt-2 rounded-lg"
                             >
                               {item.skill}
                             </p>
@@ -173,7 +178,7 @@ export default function About() {
                           return (
                             <p
                               key={idx}
-                              className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
+                              className="bg-gray-800 text-gray-200 px-4 py-2 mr-2 mt-2 rounded-lg"
                             >
                               {item.skill}
                             </p>
@@ -182,19 +187,6 @@ export default function About() {
                       </div>
                     </div>
                   </div>
-                {/* <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
-                  {skills.map((item, idx) => {
-                    return (
-                      <p
-                        key={idx}
-                        className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
-                      >
-                        {item.skill}
-                      </p>
-                    )
-                  })}
-                </div> */}
-                {/* </SlideUp> */}
               </div>
             </div>
           </div>
