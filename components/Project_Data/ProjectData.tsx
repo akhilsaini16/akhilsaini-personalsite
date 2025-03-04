@@ -14,7 +14,7 @@ export const projects: Project[] = [
     {
       category: "Data Analytics",
       name: "WhatsApp API",
-      details: "**need to fill in**",
+      details: "Created an automated phone number verification system",
       description: (
         <>
           <p>
@@ -44,7 +44,7 @@ export const projects: Project[] = [
     {
       category: "Data Analytics",
       name: "Priority & Similarity Analysis",
-      details: "**need to fill in**",
+      details: "Conducted a two-part data analytics project",
       description:(
         <>
           <p>
@@ -83,16 +83,22 @@ export const projects: Project[] = [
     {
       category: "Data Analytics",
       name: "Rapid API",
-      details: "**need to fill in**",
-      description:(
+      details: "Integrated dynamic APIs into a chatbot",
+      description: (
         <>
-          <p>Created a website using <strong>Flask</strong> for users to generate test cases for their Python code.</p>
-          <p>Integrated <em>OpenAI APIs</em> to generate test cases.</p>
+          <p>
+            Integrated <strong>dynamic APIs</strong> into a chatbot using <strong>Rapid API</strong>, enabling it to retrieve real-time data based on user queries.
+          </p>
+          <p>
+            Designed and implemented scenarios where the chatbot required external data, then sourced and integrated the appropriate APIs to enhance its functionality.
+          </p>
           <ul className="list-disc list-inside mt-2">
-            <li>Supports various Python functions</li>
-            <li>Allows users to edit generated test cases</li>
+            <li>Developed API-driven responses to dynamically provide real-time information to users.</li>
+            <li>Integrated APIs from <strong>Rapid API</strong> into the chatbot to extend its capabilities.</li>
+            <li>Created and tested use cases where the bot intelligently determines when an API call is required.</li>
           </ul>
-          <p>Check out the <a href="https://example.com" target="_blank" className="text-blue-500 underline">GitHub repo</a>.</p>
+          <br />
+          <p><strong>Technologies Used:</strong> Rapid API, Chatbot Development, API Integration</p>
         </>
       ),
       date: "Sept 2024 - Current",
@@ -131,7 +137,7 @@ export const projects: Project[] = [
     {
       category: "Data Analytics",
       name: "Data Analysis & Visualization",
-      details: "**need to fill in**",
+      details: "Data analytics project",
       description:(
         <>
           <p>
@@ -196,7 +202,7 @@ export const projects: Project[] = [
     // Drug Afforability Application
     {
       category: "Mobile App Dev",
-      name: "Drug Afforability Application",
+      name: "Drug Affordability Application",
       details: "A web app that helps users find cheaper drug alternatives.",
       description: (
         <>
